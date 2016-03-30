@@ -80,7 +80,7 @@ footer ul li{
 // show page style ends
 
 
-//Index page style begins
+// Article Index page style begins
 
 .article-title{
  font-weight: bold;
@@ -96,4 +96,13 @@ footer ul li{
   border-bottom: 1px solid #eaeaea;
   margin-bottom: 15px;
   font-size: 0.8em;
+}
+
+
+
+// User index style  begins
+
+.user-list{
+  list-style: none;
+  padding:0;
 }
