@@ -3,7 +3,7 @@ $navbar-default-bg:#01579B;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-// home page css start
+// home page style start
 
 #logo{
   font-size: 1.7em;
@@ -67,12 +67,26 @@ footer ul li{
   margin-left: 15px;
 }
 
-// home page css end
+// home page css ends
 
 
-// show page  style
+// show page  style begins
 
 .article-actions{
-  border-top: 1px solid #01579B;
+  border-top: 1px solid #eaeaea;
   padding-top: 5px;
+}
+
+// show page style ends
+
+
+//Index page style begins
+
+.article-title{
+ font-weight: bold;
+ font-size: 1.5em;
+}
+
+.article-body{
+  border-top: 1px solid #eaeaea;
 }
