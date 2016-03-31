@@ -1,25 +1,65 @@
-$navbar-default-bg:#01579B;
+$navbar-default-bg:#2e2e2c;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
 // home page style start
 
-#logo{
-  font-size: 1.7em;
-  color:#ffffff;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  font-weight: bold;
+body{
+  background-color: #eceff1;
+}
+*{
+  border-radius: 0 !important;
+}
+
+.btn-primary{
+  background-color: #2e2e2c !important;
+  color:#f7df1e !important;
+}
+.btn-primary:hover{
+  background-color: #f7df1e !important;
+  color:#2e2e2c !important;
+}
+
+.btn-default{
+  background-color: #f7df1e !important;
+  color:#2e2e2c !important;
+}
+
+input, textarea{
+    background-color:#cdcdcd !important;
+    color: #2e2e2c !important;
+}
+
+.form-control:focus {
+    border-color: #000 !important;
+    outline: 1;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+
+ul.nav li a, ul.nav li a:visited {
+    color: #cdcdcd !important;
+}
+.well{
+  background-color: #f8f7fd !important;
+}
+
+ul.nav li a:hover, ul.nav li a:active {
+    color: #f7df1e !important;
+}
+
+a {
+color: #0d47a1 !important;
 }
 
 .jumbotron{
-  background-color: #01579B;
+  background-color: #2e2e2c;
   margin-top: 40px;
 }
 
 #logo:hover{
-  color: #fff;
+  color: #cdcdcd;
   text-decoration: none;
 }
 
@@ -28,13 +68,13 @@ $navbar-default-bg:#01579B;
 }
 .jumbotron h1{
  font-size: 12em;
- color: #fff;
+ color: #f7df1e;
  letter-spacing: -14px;
  font-weight: bolder;
 }
 
 .jumbotron h3{
- color: #fff;
+ color: #f7df1e;
  margin-bottom: 100px;
 }
 
@@ -67,6 +107,28 @@ footer ul li{
   margin-left: 15px;
 }
 
+.example .pagination>li>a,
+.example .pagination>li>span {
+  border: 1px solid purple !important;
+}
+.pagination>li.active>a {
+  background:#2e2e2c  !important;
+  color: #f7df1e !important;
+}
+
+#logo{
+  font-size: 1.7em;
+  color:#f7df1e !important;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.jumbotron h1 span{
+  font-size:0.6em;
+  letter-spacing: 5px;
+}
+
 // home page css ends
 
 
@@ -76,6 +138,7 @@ footer ul li{
   border-top: 1px solid #eaeaea;
   padding-top: 5px;
 }
+
 
 // show page style ends
 
@@ -113,3 +176,9 @@ footer ul li{
   list-style: none;
   padding:0;
 }
+
+// article form
+
+  .input-checkbox{
+    width: auto !important;
+  }

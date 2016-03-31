@@ -8,8 +8,11 @@
  <h5 class="center"> By: <%= link_to @article.user.username, user_path(@article.user)  %></h5>
  <hr>
  <h4> <%= simple_format(@article.description) %> </h4>
-
-
+<% if @article.categories.any?  %>
+   <p>Categories: <%  @article.categories.each do |category|%>
+                        <%= link_to category.name, category_path(category) %>,&nbsp;
+                  <% end %></p>
+                  <% end %>
 <div class="article-actions">
   <%  if logged_in? && (current_user == @article_user || current_user.admin?) %>
     <%= link_to "Edit this Article", edit_article_path(@article), class: "btn btn-primary btn-md " %>
