@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
 
-  has_many :articles
+  has_many :articles, dependent: :destroy  # dependent: destroy = deletes all articles that are linked to the user if its ever deleted.
   before_save { self.email = email.downcase }
 
   validates :username,presence: true,
