@@ -17,7 +17,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       session[:user_id] = @user.id
-        flash[:success] = "welcome to simple blog #{@user.username}."
+        flash[:success] = "welcome to JS-haps blog #{@user.username}."
         redirect_to user_path(@user)
     else
       flash[:danger] ="something went wrong"
