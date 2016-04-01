@@ -5,6 +5,14 @@ $navbar-default-bg:#2e2e2c;
 
 // home page style start
 
+.dropdown-menu{
+  background-color: #2e2e2c;
+}
+
+.dropdown-menu li:hover{
+  background-color: #f7df1e !important;
+}
+
 body{
   background-color: #eceff1;
 }
